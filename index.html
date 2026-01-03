@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デリソバ・リバイバル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div class="hud-item">
+                <span class="label">残り距離</span>
+                <span id="distance">1000</span> m
+            </div>
+            <div class="hud-item">
+                <span class="label">制限時間</span>
+                <span id="time">60</span> 秒
+            </div>
+            <div class="hud-item">
+                <span class="label">そば</span>
+                <span id="soba-count">5</span>
+            </div>
+        </div>
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        <div id="message-overlay" class="hidden">
+            <h1 id="message-title">START</h1>
+            <p id="message-subtitle">Press Space to Start</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
